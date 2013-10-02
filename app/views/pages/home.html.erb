@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>My Test HTML Page</title>
+<script type="text/javascript" src="some.js"></script>
+<style type="text/css">
+body {
+background-color: pink;
+color: blue;
+}
+ 
+p {
+font-size: 100px;
+}
+ 
+p#paragraph_1 {
+font-size: 25px;
+}
+ 
+#paragraph_2.a_paragraph {
+font-size: 75px;
+}
+ 
+#paragraph_2 {
+font-size: 50px;
+}
+ 
+.a_paragraph {
+font-size: 5px;
+}
+ 
+p:hover {
+color: orange;
+}
+ 
+</style>
+</head>
+<body>
+<p id="paragraph_1" class="a_paragraph">Yuan Wang's Project 1</u></p>
+<p id="paragraph_2" class="">
+
+
+
+        <%PROJECTS.each_pair do |project,details|%>
+        
+            <%=project %>
+            <%=details['description'] %>
+            <%=link_to details['url']%><br />
+           
+        
+        <% end %>
+
+  
+ 
+  
+   
+
+</p>
+ 
+<div>
+This is a page division.
+</div>
+ 
+<span>
+This is a span.
+</span>
+<br />
+ 
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+ 
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+ 
+<a href="jodaro.com">My web site</a>
+ 
+<table>
+<thead>
+<tr>
+<th>Head</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detail</td>
+</tr>
+</tbody>
+</table>
+ 
+<form>
+<input type="text" />
+<button type="submit"></button>
+<select>
+<option>Item 1</option>
+<option>Item 22</option>
+</select>
+</form>
+</body>
+</html>
